@@ -13,4 +13,5 @@ This is a WIP tool for Converting Worlds to/from 3DS Edition and Java Edition.
 - [Cracko298](https://github.com/Cracko298) - GUI Maintainer.
 
 ## Note
-### This is not affiliated with [Chunker](https://chunker.app/), an official tool to convert between Java and Bedrock worlds. The name is inspired by that, however (hopefully it's fair use).
+- **This is not affiliated with [Chunker](https://chunker.app/)** **an official tool to convert between Java and Bedrock worlds.**
+- **The name is inspired by that, however (hopefully it's fair use).**
