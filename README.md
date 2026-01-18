@@ -3,7 +3,7 @@
 
 ### Installation
 - Run the GUI (`main.py` in the First Directory) and it will install everything needed for World Conversion(s).
-- The GUI itself is fully self-contained, and the 3DS-Chunker was modified for easy usability.
+- The GUI itself is fully self-contained, and the 3DS-Chunker code was modified for easy usability, and a better experience.
 
 ### Contributors
 - [Anonymous941](https://github.com/Anonymous941) - Main Developer of Tool.
