@@ -1,5 +1,5 @@
-# 3DS-Chunker
-This is a WIP tool for Converting Worlds to/from 3DS Edition and Java Edition.
+# 3DS-Chunker-GUI
+- A fork of the 3DS-Chunker Conversion tool which should (in theory) be a better user-experience.
 
 ### Installation
 - Run the GUI (`main.py` in the First Directory) and it will install everything needed for World Conversion(s).
