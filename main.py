@@ -1,18 +1,17 @@
 from tkinter import filedialog, messagebox
-from os import getcwd, system, path
+from os import getcwd, system, path, chdir
 import tkinter as tk
 import subprocess, sys
 
-BLANK_WORLD_PATH = f"{getcwd()}\\mc3ds\\data\\blankworld"
-print(BLANK_WORLD_PATH)
+chdir(path.dirname(__file__))
+BLANK_WORLD_PATH = f"{getcwd()}\\dschunker\\data\\blankworld"
 DEP_LIST = ["dissect.cstruct", "anvil-new", "click", "nbtlib", "p_tqdm"]
 
 def startConversion(worldName:str):
-    system(f'py -m 3dschunker -c "{folder_path}" -w "{worldName}"')
-
+    system(f'py -m dschunker -c "{folder_path}" -w "{worldName}"')
 
 def getWorldName(byteData:bytes):
-    from mc3ds.nbt import NBT
+    from dschunker.nbt import NBT
     return str(NBT(byteData).get("LevelName"))
 
 def getWorld():
@@ -46,10 +45,6 @@ def beforeConvert():
     with open(levelDatPath, 'rb+') as f:
         worldName = getWorldName(f.read())
     startConversion(worldName)
-
-try:from mc3ds.nbt import NBT
-except ModuleNotFoundError: print("success");testModules()
-
 
 root = tk.Tk()
 root.title("3DS Chunker (World Converter) - GUI")
